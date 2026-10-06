@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex-grow: 1;
+}
+
+.nav{
+    background-color: #448C4C;
+    border: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.nav img{
+    height: 50px;
+    
+}
+
+
+.nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    padding:10px;
+}
+
+.nav a h3{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    
+}
+
+.contact{
+    background-color: #F8F9FA;
+}
+
+.contact ul{
+    display: flex;
+    justify-content: end;
+    gap: 5em;
+    padding: 9px 20px;
+    font-weight: 500;
+}
+
+.contact ul li{
+    list-style: none;
+}
+
+.contact ul li a{
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    color: black;
+}
+
+.dont-break{
+    white-space: nowrap;
+}
+
+
+h4{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #448C67;
+}
+
+
+.container{
+    display: flex;
+    flex-grow: 1;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    height: 180px;
+    width: 320px;
+    cursor: pointer;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border-radius: 6px;
+    border: 1px solid;
+}
+
+.card h5{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+footer{
+    background-color: #448C4C;
+    width: 100%;
+    color: white;
+}
+
+footer p{
+    padding: 10px;
+}
+
+@media screen and (max-width: 737px) {
+    .contact ul {
+        display: flex;
+        flex-flow: column;
+        justify-items: space-around;
+        align-items: center;
+        gap: 1em;
+    }
+}

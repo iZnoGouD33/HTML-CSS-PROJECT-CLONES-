@@ -1,0 +1,67 @@
+/* CSS RESET! */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+
+:root{
+    /* COLORS */
+    --bg-color: linear-gradient(to left,#9b3fc0,#3498db);
+    /* FONT SIZE */
+    --ff:min(1.3rem,12vh)
+}
+
+body{
+    font-family: "Roboto",sans-serif;
+    font-size: 1.5rem;
+    background-image: var(--bg-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    height: 600px;
+    width: 450px;
+    margin: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;}
+
+.login form{
+    display: flex;
+    flex-flow: column;
+    gap: 1.5em;
+    padding: 2rem;
+
+}
+
+.login form input{
+    border: none;
+    border-bottom: 1px solid #aaa;
+    outline: none;
+    width: 15rem;
+    padding: 10px 0;
+    font-size: var(--ff);
+
+}
+
+
+.login button{
+    padding: 1rem;
+    background: var(--bg-color);
+    border: none;
+    font-size: var(--ff);
+}
+
+.forgot-pass,
+.Sign-up{
+    font-size: var(--ff);
+}

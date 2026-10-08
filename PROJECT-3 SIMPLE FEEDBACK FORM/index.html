@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="feedback">
+        <h4>we'd love to know what you think</h4>
+        <div class="grid1">
+            <div class="box">
+            <p>Last Name</p>
+            <input type="text" id="fn" required>
+        </div>
+        <div class="box">
+            <p>Last Name</p>
+        <input type="text" id="ln" required>
+        </div>
+        <div class="box">
+            <p>Email*</p>
+            <input type="text" id="email" required>
+        </div>
+        <div class="box">
+            <p>Phone</p>
+            <input type="text" id="ph" required>
+        </div>
+        </div>
+
+        <section>
+        <!-- 2. Rating section -->
+        <div class="rating">
+        <h5>Good</h5>
+            <span onclick="this.style.color='red'">♡</span>
+            <span onclick="this.style.color='red'">♡</span>
+            <span onclick="this.style.color='red'">♡</span>
+            <span onclick="this.style.color='red'">♡</span>
+            <span onclick="this.style.color='red'">♡</span>
+        </div>
+        </section>
+
+        <!-- 3. Comment-area -->
+         <div class="feedback-area">
+            <textarea   name="" id="comment" placeholder="How can we imporve?"></textarea>
+
+         </div>
+
+         <!-- Submit -->
+          <div class="submit">
+            <button>Sand Feedback</button>
+            <p class="ty-p">Thanks For submiting!</p>
+          </div>
+    </div>
+</body>
+</html>

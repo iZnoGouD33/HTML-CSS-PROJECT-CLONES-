@@ -20,12 +20,12 @@ body{
 }
 
 
-.feedback{
-    height: 730px;
-    width: 550px;
+.feedback-container{
+    height: 750px;
+    width: min(530px,90%);
     background-color: var(--pr-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.193);
-    margin: 5px;
+    margin: 10px;
 }
 
 h4{
@@ -33,15 +33,16 @@ h4{
     padding: 1rem;
     margin-bottom: 30px;
     text-transform: capitalize;
+    font-size: clamp(10px,5vw,30px);
 }
 
 .grid1{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 1rem;
+    margin: 0px auto;
     gap: 1em;
-    justify-items: center;
     box-shadow: 1px ;
+    width: max(100px,90%)
     
 }
 input{
@@ -49,6 +50,7 @@ input{
     background-color: var(--box-color);
     padding: 1rem;
     border-radius: 10px;
+    width: 90%;
 }
 
 p{
@@ -57,7 +59,7 @@ p{
 }
 
 .rating{
-    margin: 0px 30px;
+    margin-top: 30px;
 }
 
 span{
@@ -107,9 +109,92 @@ textarea::placeholder {
     border-radius: 6px;
     font-size: 17px;
     font-weight: 600;
+    margin: 2px;
+}
+
+.feedback-area{
+    margin: 30px;
 }
 
 
 .ty-p{
     color: #3CD3AE;
+}
+
+@media screen  and (max-width:525px) {
+    .grid1{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        gap: 0.75em;
+        height: 223px;
+
+    }
+
+    input{
+        padding: 0.50rem;
+        margin: auto;
+        width: min(300px);
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    h4{
+        margin: 0px;
+    }
+    .grid1{
+        justify-content: center;
+        align-items: center;
+    }
+    
+    section{
+        margin-bottom: 0px;
+    }
+
+    .feedback-area{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    
+    
+    .submit button{
+        margin: 22px;
+        padding: 18px;
+        margin: 28px 0px 22px 0px;
+    }
+
+}
+
+
+
+
+@media screen and (max-height:715px){
+    .feedback-container{
+        height: 600px;
+    }
+
+    .grid1{
+        gap: 0.25em;
+    }
+
+    .rating{
+        margin: 0px;
+    }
+
+    #comment{
+        height: 75px;
+    }
+
+    .feedback-area{
+        height: 67px;
+    }
+
+    .snd-fb-btn{
+        width: 71%;
+    }
+
+   
 }

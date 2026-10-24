@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Holy Grail Layout!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+
+    <div class="grid-container">
+    
+        <!-- Head Section -->
+      <header>
+        <h1>The Art Of Games</h1>
+      </header>
+
+      <!-- Nav-bar -->
+      <nav>
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          ☰
+        </button>
+        <ul id="navLinks" class="nav-links">
+          <li><a href="#">Action & Adventure Games</a></li>
+          <li><a href="#">Fantasy Books</a></li>
+          <li><a href="#">Role-Playing Games (RPGs)</a></li>
+          <li><a href="#">Mystery & Thriller Books</a></li>
+          <li><a href="#">Survival Horror Games</a></li>
+          <li><a href="#">Science Fiction Books</a></li>
+          <li><a href="#">Open-World Games</a></li>
+        </ul>
+      </nav>
+
+      <!-- Main Section -->
+      <main>
+        <h2>The Story of "--------"</h2>
+        <img src="img/banner.png" alt="image!" />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Necessitatibus, labore tempore quae eius vel totam magnam harum quas.
+          Cumque reprehenderit aliquid incidunt voluptates dolore quod, officiis
+          quasi accusantium. Tenetur deleniti animi laborum perferendis, fugit
+          eius quisquam temporibus cumque optio! Nihil?
+        </p>
+
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Necessitatibus, labore tempore quae eius vel totam magnam harum quas.
+          Cumque reprehenderit aliquid incidunt voluptates dolore quod, officiis
+          quasi accusantium. Tenetur deleniti animi laborum perferendis, fugit
+          eius quisquam temporibus cumque optio! Nihil?
+        </p>
+      </main>
+
+      <!-- Aside -->
+      <aside>
+        <ul>
+          <li>Upcoming Game Releases</li>
+          <li>Best-Selling Books</li>
+          <li>Popular Gaming Franchises</li>
+          <li>Must-Read Fantasy Novels</li>
+          <li>Top-Rated Indie Games</li>
+          <li>Book-to-Game Adaptations</li>
+        </ul>
+      </aside>
+
+      <!-- Footer -->
+      <footer>
+        <h3>Copyright © 2026 TheArts. All Rights Reserved.</h3>
+        <div class="social">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-discord"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Hamburgar Script -->
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("navLinks");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
